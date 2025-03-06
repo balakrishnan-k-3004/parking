@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Animated Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-item" id="home">
+                <span class="icon">🏠</span>
+                <span class="label">Home</span>
+            </div>
+            <div class="sidebar-item" id="analytics">
+                <span class="icon">📊</span>
+                <span class="label">Analytics</span>
+            </div>
+            <div class="sidebar-item" id="settings">
+                <span class="icon">⚙️</span>
+                <span class="label">Settings</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <span>Welcome, User!</span>
+                </div>
+            </header>
+
+            <div class="cards">
+                <div class="card">
+                    <h2>Sales</h2>
+                    <p>$12,000</p>
+                </div>
+                <div class="card">
+                    <h2>Visitors</h2>
+                    <p>1,500</p>
+                </div>
+                <div class="card">
+                    <h2>Performance</h2>
+                    <p>85%</p>
+                </div>
+            </div>
+
+            <!-- Chart Section -->
+            <div class="chart-container">
+                <canvas id="salesChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
